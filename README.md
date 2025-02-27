@@ -18,14 +18,25 @@ Deploy the Tinybird and Next.js to the cloud to get started quickly.
 
 [![Deploy to Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Falrocar%2Fvercel-logs-explorer-template&project-name=vercel-logs-explorer-template&repository-name=vercel-logs-explorer-template&demo-description=Custom%20logs%20explorer%20for%20your%20application%20logs%20using%20Tinybird&demo-url=http%3A%2F%2Flogs.tinybird.app&demo-image=//github.com/alrocar/vercel-logs-explorer-template/blob/main/dashboard/log-analyzer/public/banner.png?raw=true&root-directory=dashboard/log-analyzer)
 
-Configure your [Vercel Log Drains webhook](https://www.tinybird.co/docs/get-data-in/guides/ingest-vercel-logdrains).
-
 Configure Environment Variables and you are ready to go:
 
 ```bash
 NEXT_PUBLIC_TINYBIRD_API_KEY=<YOUR_TINYBIRD_ADMIN_TOKEN>
 NEXT_PUBLIC_TINYBIRD_API_URL=<YOUR_TINYBIRD_REGION_HOST>
 ```
+
+## Instrumenting your Vercel Log Drains
+
+Go to Vercel Dashboard and configure your Log Drains:
+
+- Choose your team scope on the dashboard, and go to **Team Settings > Log Drains**.
+- Select the **Projects** to send logs to Tinybird.
+- Select **Sources** you want to send logs to Tinybird.
+- Select **NDJSON** as Delivery Format.
+- Select **Environments** and **Sampling Rate**.
+- Set this URL `<YOUR_TINYBIRD_REGION_HOST>/v0/events?name=logs&x-vercel-verify=<your-x-vercel-verify-token>`
+- Select **Custom Headers**, add `Authorization` with the value `Bearer <YOUR_TINYBIRD_ADMIN_TOKEN>` and select **Add**.
+- Select **Verify** and create the Log Drain.
 
 ## Local Development
 

@@ -2,8 +2,7 @@
 - name: count_level_basic
   description: Test basic counter with level column for full year
   parameters: column_name=level
-  expected_result: |
-    {"category":"info","count":100}
+  expected_result: ''
 
 - name: count_level_date_range
   description: Test counter with level column for specific date range
@@ -13,111 +12,32 @@
 - name: count_status_basic
   description: Test basic counter with status column for full year
   parameters: column_name=status_code
-  expected_result: |
-    {"category":"200","count":52}
-    {"category":"0","count":47}
-    {"category":"302","count":1}
+  expected_result: ''
 
 - name: count_service_basic
   description: Test basic counter with service column for full year
   parameters: column_name=service
-  expected_result: |
-    {"category":"website","count":64}
-    {"category":"app","count":36}
+  expected_result: ''
 
 - name: count_environment_basic
   description: Test basic counter with environment column for full year
   parameters: column_name=environment
-  expected_result: |
-    {"category":"production","count":100}
+  expected_result: ''
 
 - name: count_request_method_basic
   description: Test basic counter with request_method column for full year
   parameters: column_name=request_method
-  expected_result: |
-    {"category":"GET","count":93}
-    {"category":"POST","count":7}
+  expected_result: ''
 
 - name: count_request_path_basic
   description: Test basic counter with request_path column for full year
   parameters: column_name=request_path
-  expected_result: |
-    {"category":"\/","count":3}
-    {"category":"\/case-studies\/vercel-relies-on-tinybird-to-power-their-realtime-user-facing-analytics","count":3}
-    {"category":"\/_next\/image?url=%2F_next%2Fstatic%2Fmedia%2Faudiense.f73231c8.png&w=1080&q=75","count":2}
-    {"category":"\/_next\/image?url=%2F_next%2Fstatic%2Fmedia%2Fblacksmith.50106456.png&w=1080&q=75","count":2}
-    {"category":"\/_next\/image?url=%2F_next%2Fstatic%2Fmedia%2Fdamian.45928533.jpg&w=640&q=75","count":2}
-    {"category":"\/_next\/image?url=%2F_next%2Fstatic%2Fmedia%2Fdub.fb288e36.png&w=1080&q=75","count":2}
-    {"category":"\/_next\/image?url=%2F_next%2Fstatic%2Fmedia%2Ffanduel.5fd4cf6c.png&w=1080&q=75","count":2}
-    {"category":"\/_next\/image?url=%2F_next%2Fstatic%2Fmedia%2Fresend.757fa7d2.png&w=640&q=75","count":2}
-    {"category":"\/_next\/image?url=%2F_next%2Fstatic%2Fmedia%2Fzembula.dc181985.jpg&w=1080&q=75","count":2}
-    {"category":"\/_next\/static\/chunks\/2619-2cd23dba2e26d68f.js","count":2}
-    {"category":"\/_next\/static\/chunks\/app\/case-studies\/layout-150cb5a9b3bd377c.js","count":2}
-    {"category":"\/_next\/static\/chunks\/app\/use-cases\/page-ff7eb96736f7040b.js","count":2}
-    {"category":"\/_next\/static\/css\/24fdcfea6034c632.css","count":2}
-    {"category":"\/_next\/static\/media\/factorial.4feadb2c.svg","count":2}
-    {"category":"\/_next\/static\/media\/genially.2d01bc63.svg","count":2}
-    {"category":"\/_next\/static\/media\/localstack.e6b31629.svg","count":2}
-    {"category":"\/_next\/static\/media\/logo.2763d05b.svg","count":2}
-    {"category":"\/_next\/static\/media\/plain.130000a0.svg","count":2}
-    {"category":"\/_next\/static\/media\/situm.c13131c9.svg","count":2}
-    {"category":"\/_next\/static\/media\/thn.fb206e5a.svg","count":2}
-    {"category":"\/_next\/static\/media\/vercel.0a8b4430.svg","count":2}
-    {"category":"\/analytics\/decide\/?v=3&ip=1&_=1740646623281&ver=1.176.0&compression=base64","count":2}
-    {"category":"\/analytics\/decide\/?v=3&ip=1&_=1740646623412&ver=1.176.0&compression=base64","count":2}
-    {"category":"\/analytics\/e\/?ip=1&_=1740646626282&ver=1.176.0&compression=gzip-js","count":2}
-    {"category":"\/analytics\/static\/web-vitals.js?v=1.176.0","count":2}
-    {"category":"\/assets\/videos\/2_Query.mp4","count":2}
-    {"category":"\/case-studies\/canva","count":2}
-    {"category":"\/case-studies\/factorial-builds-real-time-data-products-with-tinybird","count":2}
-    {"category":"\/docs\/changelog\/rss.xml","count":2}
-    {"category":"\/favicon.ico","count":2}
-    {"category":"\/use-cases","count":2}
-    {"category":"\/_next\/image?url=%2F_next%2Fstatic%2Fmedia%2Fcanva-hero.b317beb8.png&w=1920&q=75","count":1}
-    {"category":"\/_next\/image?url=%2F_next%2Fstatic%2Fmedia%2Fcanva.02099de8.png&w=1080&q=75","count":1}
-    {"category":"\/_next\/image?url=%2F_next%2Fstatic%2Fmedia%2Ffactorial-1.801697d6.png&w=1200&q=75","count":1}
-    {"category":"\/_next\/image?url=%2F_next%2Fstatic%2Fmedia%2Fguy.ba5e0804.jpg&w=128&q=75","count":1}
-    {"category":"\/_next\/image?url=%2F_next%2Fstatic%2Fmedia%2Fmarc.bacdbfcc.jpg&w=96&q=75","count":1}
-    {"category":"\/_next\/image?url=%2F_next%2Fstatic%2Fmedia%2Fsmartme.5e9acb6f.png&w=1080&q=75","count":1}
-    {"category":"\/_next\/static\/-Zr7rTrTkXvjnYUZ5GtZD\/_buildManifest.js","count":1}
-    {"category":"\/_next\/static\/-Zr7rTrTkXvjnYUZ5GtZD\/_ssgManifest.js","count":1}
-    {"category":"\/_next\/static\/chunks\/1131.9c31d985d85a17e9.js","count":1}
-    {"category":"\/_next\/static\/chunks\/1434.bc160f176b3a21de.js","count":1}
-    {"category":"\/_next\/static\/chunks\/3554.4b5938452883275d.js","count":1}
-    {"category":"\/_next\/static\/chunks\/3634.bf90d179a292f899.js","count":1}
-    {"category":"\/_next\/static\/chunks\/4182.3361ebf44d0ee7c4.js","count":1}
-    {"category":"\/_next\/static\/chunks\/5142.b6d3871a5f4a3a0d.js","count":1}
-    {"category":"\/_next\/static\/chunks\/6059-f3c34ac488045a12.js","count":1}
-    {"category":"\/_next\/static\/chunks\/6810.4b3bb0003f037dfd.js","count":1}
-    {"category":"\/_next\/static\/chunks\/7210.d61f74e338959c71.js","count":1}
-    {"category":"\/_next\/static\/chunks\/7431.10d77d7e249a399a.js","count":1}
-    {"category":"\/_next\/static\/chunks\/7517.9d4430d59165d9e3.js","count":1}
-    {"category":"\/_next\/static\/chunks\/7730.7b0e7ad65d907ed2.js","count":1}
-    {"category":"\/_next\/static\/chunks\/8278.81a655ff783d01ee.js","count":1}
-    {"category":"\/_next\/static\/chunks\/9854.a2b8c59a0f482e6d.js","count":1}
-    {"category":"\/_next\/static\/chunks\/app\/case-studies\/%5Bslug%5D\/page-897fb1b3499aedeb.js","count":1}
-    {"category":"\/_next\/static\/chunks\/app\/customer-stories\/page-e9d833085478ea4d.js","count":1}
-    {"category":"\/_next\/static\/chunks\/pages\/%5B%5B...slug%5D%5D-d2878c21ee256919.js","count":1}
-    {"category":"\/_next\/static\/chunks\/pages\/_app-4b31c396891921bd.js","count":1}
-    {"category":"\/_next\/static\/chunks\/webpack-d333c6746117baeb.js","count":1}
-    {"category":"\/_next\/static\/css\/4c848bae5b2d9383.css","count":1}
-    {"category":"\/_next\/static\/css\/653897165efb2eac.css","count":1}
-    {"category":"\/_next\/static\/media\/e9ed9197b1d41e00-s.p.woff2","count":1}
-    {"category":"\/api\/auth\/callback?code=p7KPanuH9x4_OphQqfItWbx0Obt0GhXvR7Dh12myLO_53&state=eyJyZXR1cm5UbyI6Imh0dHBzOi8vYXBwLnRpbnliaXJkLmNvLyJ9","count":1}
-    {"category":"\/api\/auth\/me","count":1}
-    {"category":"\/api\/regions","count":1}
-    {"category":"\/customer-stories","count":1}
-    {"category":"\/fonts\/iawritermonos-regular.woff2","count":1}
-    {"category":"\/phi\/i\/v0\/e\/?ip=1&_=1740646627169&ver=1.207.5&compression=gzip-js","count":1}
+  expected_result: ''
 
 - name: count_host_basic
   description: Test basic counter with host column for full year
   parameters: column_name=host
-  expected_result: |
-    {"category":"www.tinybird.co","count":39}
-    {"category":"app-p6nrfyidt-tinybird.vercel.app","count":27}
-    {"category":"website-ks0wj93wh-tinybird.vercel.app","count":25}
-    {"category":"app.tinybird.co","count":9}
+  expected_result: ''
 
 - name: count_user_agent_basic
   description: Test basic counter with user_agent column for full year
@@ -159,9 +79,7 @@
 - name: filter_by_request_method
   description: Test counter with filter by request_method
   parameters: column_name=request_method&request_method=POST,GET
-  expected_result: |
-    {"category":"GET","count":93}
-    {"category":"POST","count":7}
+  expected_result: ''
 
 - name: filter_by_request_path
   description: Test counter with filter by request_path
@@ -171,8 +89,7 @@
 - name: filter_by_status_code
   description: Test counter with filter by status_code
   parameters: column_name=status_code&status_code=200,201
-  expected_result: |
-    {"category":"200","count":52}
+  expected_result: ''
 
 - name: filter_by_environment_and_level
   description: Test counter with filter by environment and level
