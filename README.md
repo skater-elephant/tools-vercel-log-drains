@@ -6,6 +6,8 @@ This is a fork of the [Logs Explorer Template](https://github.com/tinybirdco/log
 
 Fork it and make it your own!
 
+[Watch Demo Video](https://youtu.be/3aIaeuCGQ-E)
+
 ## Quick Start
 
 Deploy the Tinybird and Next.js to the cloud to get started quickly.
