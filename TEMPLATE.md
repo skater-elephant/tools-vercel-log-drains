@@ -13,13 +13,13 @@ Fork the GitHub repository and deploy the data project to Tinybird.
 tb login
 
 # deploy the template
-tb --cloud deploy https://github.com/alrocar/vercel-logs-explorer-template/tree/main/tinybird
+tb --cloud deploy https://github.com/tinybirdco/vercel-log-drains-template/tree/main/tinybird
 
 # copy the dashboard token
 tb --cloud token copy read_pipes
 ```
 
-Deploy the project to [Vercel](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Falrocar%2Fvercel-logs-explorer-template&project-name=vercel-logs-explorer-template&repository-name=vercel-logs-explorer-template&demo-description=Custom%20logs%20explorer%20for%20your%20application%20logs%20using%20Tinybird&demo-url=http%3A%2F%2Flogs.tinybird.app&demo-image=//github.com/alrocar/vercel-logs-explorer-template/blob/main/dashboard/log-analyzer/public/banner.png?raw=true&root-directory=dashboard/log-analyzer) to get started quickly.
+Deploy the project to [Vercel](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Ftinybirdco%2Fvercel-log-drains-template&project-name=vercel-log-drains-template&repository-name=vercel-log-drains-template&demo-description=Custom%20logs%20explorer%20for%20your%20application%20logs%20using%20Tinybird&demo-url=http%3A%2F%2Flogs.tinybird.app&demo-image=//github.com/tinybirdco/vercel-log-drains-template/blob/main/dashboard/log-analyzer/public/banner.png?raw=true&root-directory=dashboard/log-analyzer) to get started quickly.
 
 Configure these Environment Variables in your Vercel project and you are ready to go:
 
@@ -45,7 +45,7 @@ Go to Vercel Dashboard and configure your Log Drains:
 
 ## Local Development
 
-Get started by forking the [GitHub repository](https://github.com/alrocar/vercel-logs-explorer-template) and then customizing it to your needs.
+Get started by forking the [GitHub repository](https://github.com/tinybirdco/vercel-log-drains-template) and then customizing it to your needs.
 
 Start Tinybird locally:
 
@@ -97,6 +97,6 @@ cd tinybird
 tb --cloud deploy
 ```
 
-Once deployed copy your Tinybird cloud host and `read_pipes` token, [deploy the Next.js application to Vercel](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Falrocar%2Fvercel-logs-explorer-template&project-name=vercel-logs-explorer-template&repository-name=vercel-logs-explorer-template&demo-description=Custom%20logs%20explorer%20for%20your%20application%20logs%20using%20Tinybird&demo-url=http%3A%2F%2Flogs.tinybird.app&demo-image=//github.com/alrocar/vercel-logs-explorer-template/blob/main/dashboard/log-analyzer/public/banner.png?raw=true&root-directory=dashboard/log-analyzer) and configure the environment variables.
+Once deployed copy your Tinybird cloud host and `read_pipes` token, [deploy the Next.js application to Vercel](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Ftinybirdco%2Fvercel-log-drains-template&project-name=vercel-log-drains-template&repository-name=vercel-log-drains-template&demo-description=Custom%20logs%20explorer%20for%20your%20application%20logs%20using%20Tinybird&demo-url=http%3A%2F%2Flogs.tinybird.app&demo-image=//github.com/tinybirdco/vercel-log-drains-template/blob/main/dashboard/log-analyzer/public/banner.png?raw=true&root-directory=dashboard/log-analyzer) and configure the environment variables.
 
 
