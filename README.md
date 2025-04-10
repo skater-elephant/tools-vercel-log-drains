@@ -8,26 +8,29 @@ Fork it and make it your own!
 
 [Watch Demo Video](https://youtu.be/3aIaeuCGQ-E)
 
-## Quick Start
+Fork the GitHub repository and deploy the data project to Tinybird.
 
-Deploy the Tinybird and Next.js to the cloud to get started quickly.
+```bash
+# select or create a new workspace
+tb login
 
-<p align="left">
-  <a href="https://app.tinybird.co?starter_kit=https://github.com/alrocar/vercel-logs-explorer-template/tinybird">
-    <img width="200" src="https://img.shields.io/badge/Deploy%20to-Tinybird-25283d?style=flat&labelColor=25283d&color=27f795&logo=data:image/svg+xml;base64,PHN2ZyB2aWV3Qm94PSIwIDAgNTAwIDUwMCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBkPSJNNTAwIDQyLjhsLTE1Ni4xLTQyLjgtNTQuOSAxMjIuN3pNMzUwLjcgMzQ1LjRsLTE0Mi45LTUxLjEtODMuOSAyMDUuN3oiIGZpbGw9IiNmZmYiIG9wYWNpdHk9Ii42Ii8+PHBhdGggZD0iTTAgMjE5LjlsMzUwLjcgMTI1LjUgNTcuNS0yNjguMnoiIGZpbGw9IiNmZmYiLz48L3N2Zz4=" />
-  </a>
-</p>
+# deploy the template
+tb --cloud deploy https://github.com/alrocar/vercel-logs-explorer-template/tree/main/tinybird
 
-[![Deploy to Vercel](https://vercel.com/button)](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Falrocar%2Fvercel-logs-explorer-template&project-name=vercel-logs-explorer-template&repository-name=vercel-logs-explorer-template&demo-description=Custom%20logs%20explorer%20for%20your%20application%20logs%20using%20Tinybird&demo-url=http%3A%2F%2Flogs.tinybird.app&demo-image=//github.com/alrocar/vercel-logs-explorer-template/blob/main/dashboard/log-analyzer/public/banner.png?raw=true&root-directory=dashboard/log-analyzer)
+# copy the dashboard token
+tb --cloud token copy read_pipes
+```
+
+Deploy the project to [Vercel](https://vercel.com/new/clone?repository-url=https%3A%2F%2Fgithub.com%2Falrocar%2Fvercel-logs-explorer-template&project-name=vercel-logs-explorer-template&repository-name=vercel-logs-explorer-template&demo-description=Custom%20logs%20explorer%20for%20your%20application%20logs%20using%20Tinybird&demo-url=http%3A%2F%2Flogs.tinybird.app&demo-image=//github.com/alrocar/vercel-logs-explorer-template/blob/main/dashboard/log-analyzer/public/banner.png?raw=true&root-directory=dashboard/log-analyzer) to get started quickly.
 
 Configure these Environment Variables in your Vercel project and you are ready to go:
 
 ```bash
-NEXT_PUBLIC_TINYBIRD_API_KEY=<YOUR_TINYBIRD_ADMIN_TOKEN>
+NEXT_PUBLIC_TINYBIRD_API_KEY=<YOUR_TINYBIRD_READ_PIPES_TOKEN>
 NEXT_PUBLIC_TINYBIRD_API_URL=<YOUR_TINYBIRD_REGION_HOST>
 ```
 
-Get your Tinybird admin token and region host from the Tinybird dashboard.
+Get your Tinybird `read_pipes` token and region host from the [Tinybird dashboard](https://cloud.tinybird.co/tokens).
 
 ## Instrumenting your Vercel Log Drains
 
