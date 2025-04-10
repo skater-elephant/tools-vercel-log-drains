@@ -8,6 +8,8 @@ Fork it and make it your own!
 
 [Watch Demo Video](https://youtu.be/3aIaeuCGQ-E)
 
+## Set up the project
+
 Fork the GitHub repository and deploy the data project to Tinybird.
 
 ```bash
