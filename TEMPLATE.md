@@ -86,7 +86,7 @@ Open the application in your browser:
 http://localhost:3000
 ```
 
-Read the [dashboard/log-analyzer/README.md](./dashboard/log-analyzer/README.md) file for more information on how to use the application and [tinybird/README.md](./tinybird/README.md) for more information on how to customize the template.
+Read the [dashboard/log-analyzer/README.md](https://github.com/tinybirdco/vercel-log-drains-template/blob/main/dashboard/log-analyzer/README.md) file for more information on how to use the application and [tinybird/README.md](https://github.com/tinybirdco/vercel-log-drains-template/blob/main/tinybird/README.md) for more information on how to customize the template.
 
 ## Deployment
 
